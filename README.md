@@ -37,14 +37,14 @@ ________________________________________________________________________________
 * **/shopping-carts/by-user** - (GET) get users shopping cart
 * **/users/by-email** - (GET) find user by email
 
-:pushpin: To start to use:
+:pushpin: **To start to use:**
 
 * Clone project from repository
 * Install Apache Tomcat 9.0.** version
 * Install MySQL
 * Config the db.properties according to your credentials
 * Inject two users using endpoint **/inject** (POST). You'll get users: <br />
-  1. admin@i.ua, admin123, ROLE_ADMIN
-  2. user@i.ua, user1234, ROLE_USER
+  - admin@i.ua, admin123, ROLE_ADMIN
+  - user@i.ua, user1234, ROLE_USER
 * You can also add your user using **/register**
 * This is it! You can use the application
