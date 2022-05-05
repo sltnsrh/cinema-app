@@ -37,7 +37,7 @@ ________________________________________________________________________________
 * **/shopping-carts/by-user** - (GET) get users shopping cart
 * **/users/by-email** - (GET) find user by email
 
-:pushpin: To start to use:
+:pushpin: **To start to use:**
 
 * Clone project from repository
 * Install Apache Tomcat 9.0.** version
