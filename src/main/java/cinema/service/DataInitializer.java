@@ -31,7 +31,7 @@ public class DataInitializer {
         userService.add(adminUser);
         User user = new User();
         user.setEmail("user@i.ua");
-        user.setPassword("user1234");
+        user.setPassword("12345678");
         user.setRoles(Set.of(userRole));
         userService.add(user);
     }

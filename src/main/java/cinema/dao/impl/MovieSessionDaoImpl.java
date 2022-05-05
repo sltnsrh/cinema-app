@@ -21,8 +21,8 @@ public class MovieSessionDaoImpl extends AbstractDao<MovieSession> implements Mo
     public List<MovieSession> findAvailableSessions(Long movieId, LocalDate date) {
         try (Session session = factory.openSession()) {
             Query<MovieSession> getAvailableSessions = session.createQuery(
-                    "from MovieSession m where m.movie.id = :id "
-                            + "and DATE_FORMAT(showTime, '%Y-%m-%d') = :date", MovieSession.class);
+                    "FROM MovieSession m WHERE m.movie.id = :id "
+                            + "AND DATE_FORMAT(showTime, '%Y-%m-%d') = :date", MovieSession.class);
             getAvailableSessions.setParameter("id", movieId);
             getAvailableSessions.setParameter("date", date.toString());
             return getAvailableSessions.getResultList();
